@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sidebar</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="sidebar" class="px-5 py-3 bg-slate-900 h-screen w-20 text-slate-50 relative tarnsition duration-300">
+      <div class="container">
+        <div class="dasbord text-2xl font-bold flex items-center justify-between mb-7 absolute top-2 w-10/12">
+          <h1 class="dash hidden">Dashboard</h1>
+          <i id="btn-burger" class="bx bx-menu ml-2"></i>
+        </div>
+
+        <div class="search relative mt-10"><i class="bx bx-search text-slate-50 absolute top-2 left-3"></i> <input type="text" class="rounded-sm text-slate-50 pl-10 py-1 bg-slate-800 w-full outline-none" placeholder="search..." /></div>
+      </div>
+      <div class="flex items-center">
+        <p class="text-sm my-2 cc transition duration-300 opacity-0">Navigation</p>
+      </div>
+
+      <ul>
+        <li>
+          <a href="" class="block w-full hover:bg-orange-500 transition duration-300 py-2 pl-3 rounded-md"><i class="bx bxs-home mr-3"></i><span class="sembunyi hidden transition duration-300">Messages</span> </a>
+        </li>
+        <li>
+          <a href="" class="block w-full hover:bg-orange-500 transition duration-300 py-2 pl-3 rounded-md"><i class="bx bx-pie-chart-alt-2 mr-3"></i><span class="sembunyi hidden transition duration-300">Analytics</span></a>
+        </li>
+        <li>
+          <a href="" class="block w-full hover:bg-orange-500 transition duration-300 py-2 pl-3 rounded-md"><i class="bx bxs-calendar-check mr-3"></i><span class="sembunyi hidden transition duration-300">Schedules</span> </a>
+        </li>
+        <li>
+          <a href="" class="block w-full hover:bg-orange-500 transition duration-300 py-2 pl-3 rounded-md"><i class="bx bx-calendar mr-3"></i><span class="sembunyi hidden transition duration-300">Calendar</span> </a>
+        </li>
+        <li>
+          <a href="" class="block w-full hover:bg-orange-500 transition duration-300 py-2 pl-3 rounded-md"><i class="bx bx-user-circle mr-3"></i><span class="sembunyi hidden transition duration-300">User</span> </a>
+        </li>
+        <li>
+          <a href="" class="block w-full hover:bg-orange-500 transition duration-300 py-2 pl-3 rounded-md"><i class="bx bxs-file-blank mr-3"></i><span class="sembunyi hidden transition duration-300">File Manger</span></a>
+        </li>
+        <li>
+          <a href="" class="block w-full hover:bg-orange-500 transition duration-300 py-2 pl-3 rounded-md"><i class="bx bx-cog mr-3"></i><span class="sembunyi hidden transition duration-300">Setting</span></a>
+        </li>
+      </ul>
+
+      <div class="profile absolute justify-between flex items-center bottom-5 w-10/12">
+        <div class="flex gap-2">
+          <img src="akun.png" alt="profile" class="w-10 h-10 rounded-md" />
+
+          <div class="sembunyi transition duration-300 hidden">
+            <p class="text-xs text-slate-500">good noon</p>
+            <h2 class="text-lg -mt-1">sagan</h2>
+          </div>
+        </div>
+
+        <i class="bx bx-log-out rounded-full bg-slate-800 sembunyi hidden transition duration-300"></i>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
+<script src="https://cdn.tailwindcss.com"></script>
